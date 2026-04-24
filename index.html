@@ -1,14 +1,32 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
-    <title>Countdown ❤️</title>
+    <meta charset="UTF-8" />
+    <title>Happy Birthday 🎉</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body onclick="confetti(event)">
+    <canvas id="canvas"></canvas>
+
     <div class="card">
-      <h1>Her Birthday is Coming 🎂</h1>
-      <h2 id="countdown"></h2>
-      <button onclick="goNext()">Enter Surprise 💖</button>
+      <h1>🎂 Happy Birthday, My Friend! 🎉</h1>
+
+      <img src="friend.jpg" class="photo" alt="Friend Photo" />
+
+      <h2 id="countdown">Loading countdown...</h2>
+
+      <button onclick="showMessage()">Click for Surprise 🎁</button>
+
+      <p id="message" class="hidden">
+        🎉 Happy Birthday! 🎉 <br /><br />
+        You are an amazing friend and I’m lucky to have you 💙 <br />
+        Thanks for all the fun memories, jokes, and support 😂🔥 <br /><br />
+        Stay happy, stay awesome! 🚀
+      </p>
+
+      <audio autoplay loop>
+        <source src="song.mp3" type="audio/mpeg" />
+      </audio>
     </div>
 
     <script src="script.js"></script>
