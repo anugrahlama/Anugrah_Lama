@@ -2,31 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Happy Birthday 🎉</title>
+    <title>Happy Birthday Nisha 🎉</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body onclick="confetti(event)">
     <canvas id="canvas"></canvas>
 
     <div class="card">
-      <h1>🎂 Happy born day Nisha Rai 🎉🫶</h1>
+      <h1>🎉 Happy Birthday Nisha Rai 🎂</h1>
 
-      <img src="friend.jpg" class="photo" alt="Friend Photo" />
+      <p class="subtitle">A small surprise just for you 💖</p>
 
-      <h2 id="countdown">Loading countdown...</h2>
+      <!-- 📸 PHOTO GALLERY -->
+      <div class="gallery">
+        <img src="1.jpeg" />
+        <img src="2.jpeg" />
+        <img src="3.jpeg" />
+        <img src="4.jpeg" />
+        <img src="5.jpeg" />
+      </div>
 
-      <button onclick="showMessage()">Click for Surprise 🎁</button>
+      <button onclick="showMessage()">Please Click here 🎁</button>
 
-      <p id="message" class="hidden">
-        🎉 Happy Birthday! 🎉 <br /><br />
-        You are an amazing friend and I’m lucky to have you 💙 <br />
-        Thanks for all the fun memories, jokes, and support 😂🔥 <br /><br />
-        Stay happy, stay awesome! 🚀
+      <!-- 💌 MESSAGE -->
+      <p id="message" class="hidden fade">
+        🎉 Happy Birthday Nisha Rai 🎉🎂 <br /><br />
+
+        So glad I met you on October 17, 2025. It’s been 6 months and 7 days
+        (189 days) already, and honestly we’ve had some really fun and cool
+        moments. You’re such a positive person, somehow you always make me feel
+        good whenever we talk or hang out. <br /><br />
+
+        Ma asha garchu yo barsa tapai ko sabai ichchhya pura hos. Just stay the
+        same inspiring and motivating person you are. Thorai time matra bhayo
+        timilai chineko, tara pani I guess we’ve made some seriously cool
+        memories, ones that’ll stay with me till the very end, for sure.
+        <br /><br />
+
+        Happy Birthday again, Nisha Sampang Rai 🎉🎂
       </p>
-
-      <audio autoplay loop>
-        <source src="song.mp3" type="audio/mpeg" />
-      </audio>
     </div>
 
     <script src="script.js"></script>
