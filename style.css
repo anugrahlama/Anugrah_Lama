@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  overflow: hidden;
+  text-align: center;
+  color: white;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  margin-top: 100px;
+}
+
+.photo {
+  width: 200px;
+  border-radius: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ❤️ Falling Hearts */
+.heart {
+  position: fixed;
+  top: -10px;
+  color: red;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+/* 🎆 Fireworks Canvas */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
