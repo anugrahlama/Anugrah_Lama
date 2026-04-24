@@ -22,7 +22,7 @@ function confetti(e) {
   }
 }
 
-// resize fix
+// resize fix (important for mobile)
 window.addEventListener("resize", () => {
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
